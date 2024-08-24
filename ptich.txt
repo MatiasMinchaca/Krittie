@@ -1,0 +1,43 @@
+Pitch Deck: Proyecto de Inteligencia Artificial y Blockchain en Medicina
+1.  Problema
+
+Sobrecarga de Información: Los pacientes suelen enfrentarse a una sobrecarga de información médica que no siempre pueden interpretar correctamente.
+Falta de Propiedad sobre los Datos: Los pacientes no tienen control total sobre sus historiales médicos y su seguridad está comprometida.
+Acceso y Alertas Médicas: No existen suficientes herramientas accesibles que permitan a los pacientes evaluar rápidamente la urgencia de su situación médica.
+2.  Solución
+
+Inteligencia Artificial para Análisis Médico: Nuestra plataforma utiliza IA para leer y analizar historiales clínicos en formato PDF, extrayendo los datos más relevantes y comparándolos con bases de datos avanzadas como las de ChatGPT.
+Propiedad de Datos con Blockchain: Implementamos un sistema de inicio de sesión que utiliza blockchain para garantizar que los usuarios son dueños de sus datos. No almacenamos contraseñas, y mediante un smart contract, certificamos que los datos no serán utilizados sin consentimiento.
+Asistente Virtual Personalizado: Los usuarios pueden interactuar con un BOT que, basado en sus signos, síntomas y su historial médico, les ofrece recomendaciones personalizadas. Clasificamos la situación en tres niveles: crítico, moderado y leve, y sugerimos si deben acudir a un médico de inmediato o en un plazo prudente.
+3.  Tecnología
+
+Plataforma Web con IA: Implementación de inteligencia artificial avanzada para el análisis de textos médicos y la generación de alertas.
+Blockchain para Seguridad y Privacidad: Uso de tecnología blockchain para asegurar que los datos médicos sean privados y bajo el control del usuario.
+Smart Contracts: Certificación del no uso de los datos médicos mediante contratos inteligentes.
+4.  Modelo de Negocio
+
+Suscripción Freemium: Acceso básico gratuito con opciones premium para análisis más avanzados y alertas personalizadas.
+Licencias para Profesionales Médicos: Ofrecemos licencias a profesionales de la salud para utilizar nuestra tecnología en sus prácticas.
+5.  Mercado Objetivo
+
+Pacientes: Personas con condiciones médicas crónicas o que deseen un mayor control sobre su salud.
+Profesionales de la Salud: Médicos, clínicas y hospitales que buscan herramientas adicionales para el análisis de historiales médicos.
+Proveedores de Seguros de Salud: Empresas que buscan reducir costos mediante el autocuidado proactivo de sus asegurados.
+6.  Competencia
+
+Otras Plataformas de Telemedicina: Ofrecen consultas médicas, pero no el nivel de personalización ni la seguridad de datos que nuestro sistema ofrece.
+Sistemas de Historias Clínicas Electrónicas: Enfocados en el almacenamiento de datos, pero no en el análisis avanzado y la seguridad basada en blockchain.
+7.  Ventaja Competitiva
+
+Seguridad y Propiedad de Datos: Nuestro enfoque en la privacidad y control de datos a través de blockchain nos distingue de otras soluciones en el mercado.
+Asistente Personalizado con IA: Ofrecemos una solución única que integra inteligencia artificial con datos médicos para proporcionar recomendaciones de salud personalizadas y precisas.
+8.  Roadmap
+
+Q1 2024: Desarrollo y pruebas de la plataforma web.
+Q2 2024: Integración con tecnología blockchain y contratos inteligentes.
+Q3 2024: Lanzamiento beta y feedback de usuarios.
+Q4 2024: Lanzamiento oficial y expansión de la base de usuarios.
+9.  Equipo
+
+Fundadores: [Nombre del Usuario] y [Nombre del Co-Fundador]
+Experiencia en AI, Blockchain y Medicina: Contamos con un equipo multidisciplinario con experiencia en desarrollo de inteligencia artificial, tecnología blockchain y conocimientos en medicina.
