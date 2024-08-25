@@ -25,7 +25,7 @@ export default function WIDWidget() {
       });
 
       if (signInResult?.ok) {
-        router.push('/krittiers')
+        router.push('/dona')
       }
     } catch (error) {
       console.error('Error en la autenticación con World ID:', error);
