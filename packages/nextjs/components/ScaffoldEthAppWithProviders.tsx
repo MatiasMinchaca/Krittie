@@ -27,7 +27,6 @@ const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
         <Header />
         <main className="relative flex flex-col flex-1">{children}</main>
         {pathname === "/debug" && <DebugFooter />}
-        <Footer />
       </div>
       <Toaster />
     </>

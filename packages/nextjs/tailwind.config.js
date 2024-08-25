@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   plugins: [require("daisyui"), require("tailwindcss-animate")],
@@ -14,6 +15,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        krittie:"var(--font-katibeh)",
+        poppins: "var(--font-poppins)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

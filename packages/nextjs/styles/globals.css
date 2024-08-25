@@ -8,37 +8,38 @@
        Author: Ilias Ism
        URL: https://gradient.page */
 
+    
     /* CSS: .bg-gradient { background: var(--gradient) } */
-    --gradient: #c0e8f0;
+    --gradient: #4045ce;
 
-    --background: 202 40.3% 6.8%;
-    --foreground: 202 6.2% 99.25%;
+    --background: 277, 23%, 92%;
+    --foreground: 236, 21%, 15%;
 
-    --muted: 202 31% 25.5%;
-    --muted-foreground: 202 6.2% 58.5%;
+    --muted: 253 29.5% 15.9%;
+    --muted-foreground: 253 5.8999999999999995% 55.3%;
 
-    --popover: 202 52.6% 11.049999999999999%;
-    --popover-foreground: 202 6.2% 99.25%;
+    --popover: 253 53.2% 6.890000000000001%;
+    --popover-foreground: 253 5.8999999999999995% 97.65%;
 
-    --card: 202 52.6% 11.049999999999999%;
-    --card-foreground: 202 6.2% 99.25%;
+    --card: 253 53.2% 6.890000000000001%;
+    --card-foreground: 253 5.8999999999999995% 97.65%;
 
-    --border: 202 31% 25.5%;
-    --input: 202 31% 25.5%;
+    --border: 253 29.5% 15.9%;
+    --input: 253 29.5% 15.9%;
 
-    --primary: 202 62% 85%;
-    --primary-foreground: 202 6.2% 8.5%;
+    --primary: 238 59% 53%;
+    --primary-foreground: 14, 0%, 97%;
 
-    --secondary: 202 31% 25.5%;
-    --secondary-foreground: 202 6.2% 99.25%;
+    --secondary: 253 29.5% 15.9%;
+    --secondary-foreground: 253 5.8999999999999995% 97.65%;
 
-    --accent: 202 31% 25.5%;
-    --accent-foreground: 202 6.2% 99.25%;
+    --accent: 253 29.5% 15.9%;
+    --accent-foreground: 253 5.8999999999999995% 97.65%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 202 6.2% 99.25%;
+    --destructive-foreground: 253 5.8999999999999995% 97.65%;
 
-    --ring: 202 62% 85%;
+    --ring: 253 59% 53%;
     --radius: 0.5rem;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -54,6 +55,9 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  html {
+    @apply bg-black
   }
 }
 

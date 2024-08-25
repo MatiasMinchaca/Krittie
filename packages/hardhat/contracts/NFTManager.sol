@@ -20,9 +20,9 @@ contract NFTManager is ERC721URIStorage {
 
     // Estructura que representa una acción realizada a un animal
     struct AnimalAction {
-        uint256 animalId; // ID del animal
-        string action;    // Acción realizada (vacunación, etc.)
-        string metadataURI; // URI de metadatos de la acción
+        uint256 animalId;    // ID del animal
+        string action;       // Acción realizada (vacunación, etc.)
+        string metadataURI;  // URI de metadatos de la acción
     }
 
     // Mapear animales y acciones
@@ -48,9 +48,19 @@ contract NFTManager is ERC721URIStorage {
     }
 
     // Función para emitir un NFT basado en una acción realizada a un animal
-    function issueNFT(uint256 animalId, string memory action, string memory metadataURI) external {
+    function issueNFT(
+        uint256 animalId, 
+        string memory action, 
+        string memory metadataURI
+    ) external {
         require(msg.sender == admin, "Only admin can issue NFTs");
-        require(animals[animalId].exists, "Animal does not exist");
+        
+        // Si el animal no existe, usa valores por defecto
+        if (!animals[animalId].exists) {
+            animalId = 1; // Valor por defecto para el ID del animal
+            action = "vacunacion"; // Valor por defecto para la acción
+            metadataURI = "ipfs://default-metadata-uri"; // Valor por defecto para la metadataURI
+        }
 
         uint256 tokenId = actionCounter + 1;
         
