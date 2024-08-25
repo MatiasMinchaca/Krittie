@@ -1,16 +1,18 @@
 // Ruta: /app/api/issue-nft/route.ts
-import { NextResponse } from 'next/server';
-import { ethers } from 'ethers';
-import { getNFTManagerContract } from '../../../utils/contracts';
-import { CONFIG } from '../../../utils/config'; // Asegúrate de importar la configuración correctamente
+import { NextResponse } from "next/server";
+import { CONFIG } from "../../../utils/config";
+import { getNFTManagerContract } from "../../../utils/contracts";
+import { ethers } from "ethers";
+
+// Asegúrate de importar la configuración correctamente
 
 export async function GET(req: Request) {
   try {
     // Obtener parámetros de la consulta
     const { searchParams } = new URL(req.url);
-    let animalId = searchParams.get('animalId') || '1'; // Valor por defecto
-    let action = searchParams.get('action') || 'vacunacion'; // Valor por defecto
-    let metadataURI = searchParams.get('metadataURI') || 'ipfs://default-metadata-uri'; // Valor por defecto
+    const animalId = searchParams.get("animalId") || "1"; // Valor por defecto
+    const action = searchParams.get("action") || "vacunacion"; // Valor por defecto
+    const metadataURI = searchParams.get("metadataURI") || "ipfs://default-metadata-uri"; // Valor por defecto
 
     // Configuración del provider y signer
     const provider = new ethers.JsonRpcProvider(CONFIG.RPC_URL);
@@ -31,10 +33,10 @@ export async function GET(req: Request) {
       message: `NFT emitido exitosamente. Hash de la transacción: ${tx.hash}`,
     });
   } catch (error) {
-    console.error('Error al emitir NFT:', error);
+    console.error("Error al emitir NFT:", error);
     return NextResponse.json({
       success: false,
-      error: error || 'Error desconocido',
+      error: error || "Error desconocido",
     });
   }
 }

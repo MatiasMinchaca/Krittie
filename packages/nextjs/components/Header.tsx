@@ -1,7 +1,9 @@
-'use client';
+"use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { getWLDSession } from "~~/app/actions";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,10 +11,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "~~/components/ui/dropdown-menu"
-import {getWLDSession} from "~~/app/actions"
-import {useEffect} from 'react'
-
+} from "~~/components/ui/dropdown-menu";
 
 function Header() {
   const pathname = usePathname();
@@ -20,7 +19,7 @@ function Header() {
 
   const router = useRouter();
 
- /*  useEffect(() => {
+  /*  useEffect(() => {
     (async () => {
       const session = await getWLDSession();
       if (!session && pathname !== "/") {

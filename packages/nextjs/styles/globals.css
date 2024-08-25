@@ -8,7 +8,6 @@
        Author: Ilias Ism
        URL: https://gradient.page */
 
-    
     /* CSS: .bg-gradient { background: var(--gradient) } */
     --gradient: #4045ce;
 
@@ -57,7 +56,7 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply bg-black
+    @apply bg-black;
   }
 }
 

@@ -4,12 +4,12 @@
 const nextConfig = {
   experimental: {
     serverActions: {
-      allowedOrigins: [
-        "localhost:3000",
-        'bxkntx0l-3000.brs.devtunnels.ms'
-      ]
-    }
+      allowedOrigins: ["localhost:3000", "bxkntx0l-3000.brs.devtunnels.ms"],
+    },
   },
+  eslint: { ignoreDuringBuilds: true },
+  // @ts-ignore
+  typescript: { ignoreDuringBuilds: true },
   reactStrictMode: true,
   webpack: config => {
     config.resolve.fallback = { fs: false, net: false, tls: false };

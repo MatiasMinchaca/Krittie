@@ -16,7 +16,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        krittie:"var(--font-katibeh)",
+        krittie: "var(--font-katibeh)",
         poppins: "var(--font-poppins)",
       },
       colors: {
