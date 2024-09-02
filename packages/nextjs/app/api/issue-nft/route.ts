@@ -16,10 +16,10 @@ export async function GET(req: Request) {
 
     // Configuración del provider y signer
     const provider = new ethers.JsonRpcProvider(CONFIG.RPC_URL);
-    const signer = provider.getSigner(CONFIG.ADMIN_ADDRESS);
+    const signer = provider.getSigner();
 
     // Obtener el contrato NFTManager
-    const nftManagerContract = getNFTManagerContract(await signer, CONFIG.NFT_MANAGER_CONTRACT_ADDRESS, provider);
+    const nftManagerContract = getNFTManagerContract(await signer);
 
     // Llamada para emitir el NFT
     const tx = await nftManagerContract.issueNFT(animalId, action, metadataURI);
@@ -32,11 +32,11 @@ export async function GET(req: Request) {
       receipt: receipt,
       message: `NFT emitido exitosamente. Hash de la transacción: ${tx.hash}`,
     });
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error al emitir NFT:", error);
     return NextResponse.json({
       success: false,
-      error: error || "Error desconocido",
+      error: error.message || "Error desconocido",
     });
   }
 }
