@@ -1,6 +1,6 @@
 // utils/contracts.ts
-import NFTManagerABI from "../../hardhat/artifacts/contracts/NFTManager.sol/NFTManager.json";
-import ShelterDonationABI from "../../hardhat/artifacts/contracts/ShelterDonation.sol/ShelterDonation.json";
+import NFTManagerABI from "./abis/NFTManager.json";
+import ShelterDonationABI from "./abis/ShelterDonation.json";
 import { ethers } from "ethers";
 
 const nftManagerAddress = "0x976EA74026E726554dB657fA54763abd0C3a0aa9"; // Dirección del contrato desplegado de NFTManager
